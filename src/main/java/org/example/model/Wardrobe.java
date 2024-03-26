@@ -1,16 +1,14 @@
 package org.example.model;
 
-import org.example.model.enums.PaintColor;
-
-public class Carpet {
+public class Wardrobe {
     private int width;
     private int height;
-   private PaintColor color;
+    private double weight;
 
-    public Carpet(int width, int height, PaintColor color) {
+    public Wardrobe(int width, int height, double weight) {
         this.width = width;
         this.height = height;
-        this.color = color;
+        this.weight = weight;
     }
 
     public int getWidth() {
@@ -21,20 +19,20 @@ public class Carpet {
         return height;
     }
 
-    public PaintColor getColor() {
-        return color;
+    public double getWeight() {
+        return weight;
     }
 
-    public void lying(){
-        System.out.println("Carpet is lying on Bedroom floor.");
+    public void add(){
+        System.out.println( "Wardrobe added into Bedroom.");
     }
 
     @Override
     public String toString() {
-        return "Carpet{" +
+        return "Wardrobe{" +
                 "width=" + width +
                 ", height=" + height +
-                ", color=" + color +
+                ", weight=" + weight +
                 '}';
     }
 }

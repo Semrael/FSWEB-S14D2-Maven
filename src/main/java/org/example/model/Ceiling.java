@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.model.enums.PaintColor;
+
 public class Ceiling {
     private int height;
     private PaintColor color;
@@ -18,6 +20,14 @@ public class Ceiling {
     }
 
     public void create(){
-        System.out.println("Ceiling has been built");
+        System.out.println("Ceiling has been built.");
+    }
+
+    @Override
+    public String toString() {
+        return "Ceiling{" +
+                "height=" + height +
+                ", color=" + color +
+                '}';
     }
 }
